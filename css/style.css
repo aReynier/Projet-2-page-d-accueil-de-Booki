@@ -1,3 +1,71 @@
-body {
-
+@font-face {
+    font-family: "Raleway-Medium";
+    src: url("../fonts/Raleway-Medium.ttf") format("truetype");
 }
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: red;
+    height: 100px;
+    padding: 0 50px 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-logo-container {
+    width: 6%;
+    min-width: 65px;
+}
+
+#header-logo-container img {
+    width: 100%;
+}
+
+nav {
+    font-family: Raleway-Medium, sans-serif;
+    width: 25%;
+    height: 100%;
+    flex: 0 1 350px;
+}
+
+#nav-header-container {
+    list-style: none;
+    background-color: orange;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* sans margin et padding, son emplacement est décalé */
+    display: flex;
+}
+
+.nav-header-item {
+    background-color: greenyellow;
+    text-align: center;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+} 
+
+.nav-header-item a {
+    color: black;
+    width: 100%;
+    padding: 25% 0 0 0;
+    font-size: 1.3em;
+    background-color: burlywood;
+} 
+
+.nav-header-item a:hover {
+    color: #0065FC;
+    box-shadow: inset 0px 2px #0065FC;
+} 
+
