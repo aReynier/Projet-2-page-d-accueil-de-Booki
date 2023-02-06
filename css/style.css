@@ -5,6 +5,13 @@
 
 body {
     margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#global-container{
+    flex: 0 1 1500px;
+    margin: 0 50px 0 50px;
 }
 
 a {
@@ -13,27 +20,27 @@ a {
 
 header {
     background-color: red;
-    height: 100px;
-    padding: 0 50px 0 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 #header-logo-container {
-    width: 6%;
-    min-width: 65px;
+    background-color: greenyellow;
+    width: 65px;
 }
 
 #header-logo-container img {
     width: 100%;
+    margin: 0;
 }
 
 nav {
     font-family: Raleway-Medium, sans-serif;
-    width: 25%;
     height: 100%;
-    flex: 0 1 350px;
+    min-width: 270px;
+    width: 26%;
+    max-width: 350px;
 }
 
 #nav-header-container {
@@ -53,14 +60,14 @@ nav {
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+
 } 
 
 .nav-header-item a {
     color: black;
     width: 100%;
-    padding: 25% 0 0 0;
-    font-size: 1.3em;
+    font-size: 1em;
+    padding: 6vh 0 6vh 0;
     background-color: burlywood;
 } 
 
