@@ -20,29 +20,31 @@
                 </nav>
             </header>
             <main>
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre-ville ou en pleine nature</p>
-                <form>
-                    <div id="place-search-container">
-                        <i class="fa-solid fa-location-dot" id="place-search-item-1"></i>
-                        <input type="search" placeholder="Marseille, France" id="place-search-item-2"/>
-                        <input type="submit" value="Rechercher" id="place-search-item-3">
+                <section>
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre-ville ou en pleine nature</p>
+                    <form>
+                        <div id="place-search-container">
+                            <i class="fa-solid fa-location-dot" id="place-search-item-1"></i>
+                            <input type="search" placeholder="Marseille, France" id="place-search-item-2"/>
+                            <input type="submit" value="Rechercher" id="place-search-item-3">
+                        </div>
+                        <div id="place-filter-container">
+                            <h2>Filtres</h2>
+                            <input type="checkbox" name="economical" id="economical" class="place-filter">
+                            <label for="economical" class="place-filter-content"><i class="fa-solid fa-money-bill-wave"></i>Économique</label>
+                            <input type="checkbox" name="family" id="family" class="place-filter">
+                            <label for="family" class="place-filter-content"><i class="fa-solid fa-person"></i>Familial</label>
+                            <input type="checkbox" name="romantic" id="romantic" class="place-filter">
+                            <label for="romantic" class="place-filter-content"><i class="fa-solid fa-heart"></i>Romantique</label>
+                            <input type="checkbox" name="pets" id="pets" class="place-filter">
+                            <label for="pets" class="place-filter-content"><i class="fa-solid fa-dog"></i>Animaux autorisés</label>
+                        </div>
+                    </form>
+                    <div id="remaining-place-container">
+                        <div id="remaining-place-info"><i class="fa-sharp fa-solid fa-info"></i></div><p>Plus de 500 logements sont disponibles dans cette ville</p>
                     </div>
-                    <div id="place-filter-container">
-                        <h2>Filtres</h2>
-                        <input type="checkbox" name="economical" id="economical" class="place-filter">
-                        <label for="economical" class="place-filter-content"><i class="fa-solid fa-money-bill-wave"></i>Économique</label>
-                        <input type="checkbox" name="family" id="family" class="place-filter">
-                        <label for="family" class="place-filter-content"><i class="fa-solid fa-person"></i>Familial</label>
-                        <input type="checkbox" name="romantic" id="romantic" class="place-filter">
-                        <label for="romantic" class="place-filter-content"><i class="fa-solid fa-heart"></i>Romantique</label>
-                        <input type="checkbox" name="pets" id="pets" class="place-filter">
-                        <label for="pets" class="place-filter-content"><i class="fa-solid fa-dog"></i>Animaux autorisés</label>
-                    </div>
-                </form>
-                <div id="remaining-place-container">
-                    <div id="remaining-place-info"><i class="fa-sharp fa-solid fa-info"></i></div><p>Plus de 500 logements sont disponibles dans cette ville</p>
-                </div>
+                </section>
             </main>
         </div>
     </body>
