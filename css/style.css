@@ -7,7 +7,7 @@ body {
 }
 
 #global-container{
-    flex: 0 1 1500px;
+    flex: 0 1 1400px;
     margin: 0 50px 0 50px;
 }
 
@@ -15,19 +15,12 @@ h1, h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 1.4em;
-    margin-bottom: -10px;
 }
 
 h3 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;    
     font-size: 1.2em;
-}
-
-p {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400; 
-    font-size: 16px;
 }
 
 a {
@@ -53,7 +46,6 @@ header {
 nav {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    height: 100%;
     min-width: 270px;
     width: 26%;
     max-width: 350px;
@@ -61,7 +53,6 @@ nav {
 
 #nav-header-container {
     list-style: none;
-    height: 100%;
     margin: 0;
     padding: 0;
     /* sans margin et padding, son emplacement est décalé */
@@ -70,7 +61,6 @@ nav {
 
 .nav-header-item {
     text-align: center;
-    height: 100%;
     flex: 1;
     display: flex;
     justify-content: center;
@@ -89,8 +79,12 @@ nav {
     box-shadow: inset 0px 2px #0065FC;
 } 
 
+#place-search-section h1 {
+    margin-bottom: -10px;
+}
+
 #place-search-container {
-    width: 28%;
+    width: 31%;
     display: flex;
 }
 
@@ -154,6 +148,7 @@ input[type="checkbox"].place-filter + label {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 1.2em;
+    height: 50px;
     padding: 0 20px 0 0;
     margin: 0 10px 0 10px;
     display: flex;
@@ -198,7 +193,7 @@ input[type="checkbox"]:checked + label {
     column-gap: 40px;
 }
 
-#upper-cards-item-1, #upper-cards-item-2 {
+.upper-cards-background {
     background-color: #F2F2F2;
     padding: 20px 40px 20px 40px;
     margin: 25px 0 25px 0;
@@ -214,11 +209,12 @@ input[type="checkbox"]:checked + label {
 }
 
 #card-housing-container {
-    margin: 40px 0 40px 0;
+    margin: 30px 0 40px 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2);
+    grid-template-rows: repeat(2, auto);
     gap: 30px;
+
 }
 
 .card-housing, .card-trend {
@@ -227,6 +223,10 @@ input[type="checkbox"]:checked + label {
     border-radius: 20px;
     box-shadow: 0px 0px 10px #D9D9D9;
     transition: box-shadow 0.2s;
+}
+
+.card-housing {
+    height: 190px;
 }
 
 .card-housing:hover, .card-trend:hover, .card-activities:hover {
@@ -244,12 +244,22 @@ input[type="checkbox"]:checked + label {
     padding: 0 10px 0 10px;
 }
 
-.card-housing h3, card-trend h3 {
-    margin: 5px 0 -5px 0;
+.card-housing h3, .card-trend h3 {
+    font-size: 1em;
+    margin: 4px 0 4px 0;
+}
+
+.card-housing p, .card-trend p {
+    font-size: 0.9em;
+    margin: 4px 0 4px 0;
+}
+
+.card-trend p {
+    margin: 6px 0 4px 0;
 }
 
 .card-stars {
-    margin: 10px 0 10px 0;
+    margin: 6px 0 0 0;
     display: flex;
 }
 
@@ -275,7 +285,7 @@ input[type="checkbox"]:checked + label {
 }
 
 .card-trend-container {
-    margin: 35px 0 40px 0;
+    margin: 13px 0 40px 0;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -283,16 +293,16 @@ input[type="checkbox"]:checked + label {
 
 .card-trend {
     display: flex;
-    height: 150px;
+    height: 135px;
 }
 
 .card-trend-img {
-    flex: 1;
+    flex: 2;
 }
 
 .card-trend-text-container {
-    flex: 2;
-    margin: 0 0 0 20px;
+    flex: 3;
+    margin: 10px 80px 10px 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
