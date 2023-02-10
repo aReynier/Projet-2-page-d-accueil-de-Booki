@@ -62,7 +62,7 @@ nav {
     display: flex;
 }
 
-.nav-header-item {
+.nav-header-link {
     text-align: center;
     flex: 1;
     display: flex;
@@ -70,14 +70,14 @@ nav {
 
 } 
 
-.nav-header-item a {
+.nav-header-link a {
     color: black;
     width: 100%;
     font-size: 1em;
     padding: 6vh 0 6vh 0;
 } 
 
-.nav-header-item a:hover {
+.nav-header-link a:hover {
     color: #0065FC;
     box-shadow: inset 0px 2px #0065FC;
 } 
