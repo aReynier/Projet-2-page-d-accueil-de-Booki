@@ -229,10 +229,6 @@ input[type="checkbox"]:checked + label {
     transition: box-shadow 0.2s;
 }
 
-.card-housing {
-
-}
-
 .card-housing:hover, .card-trend:hover, .card-activities:hover {
     box-shadow: 0px 0px 10px gray;  
 }
@@ -342,4 +338,19 @@ input[type="checkbox"]:checked + label {
 
 .card-activities-title {
     padding: 0 0 8px 10px;
+}
+
+footer {
+    background-color: #F2F2F2;
+}
+
+#nav-footer-global-container {
+    padding: 30px 0px 40px 0px;
+    padding-left: 5vw;
+    display: flex;
+    column-gap: 14vw;
+}
+
+.nav-footer-item {
+    margin: 0 0 10px 0;
 }
