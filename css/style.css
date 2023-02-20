@@ -46,47 +46,49 @@ header {
 nav {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    min-width: 270px;
-    width: 26%;
-    max-width: 350px;
+    width: 315px;
 }
 
-#nav-header-container, .nav-footer-item {
+#header-nav-container, .nav-footer-item {
     list-style: none;
     margin: 0;
     padding: 0;
     /* sans margin et padding, son emplacement est décalé */
 }
 
-#nav-header-container {
+#header-nav-container {
     display: flex;
 }
 
-.nav-header-link {
+.header-nav-link {
     text-align: center;
     flex: 1;
     display: flex;
     justify-content: center;
-
 } 
 
-.nav-header-link a {
+.header-nav-link a {
     color: black;
     width: 100%;
     font-size: 1em;
-    padding: 6vh 0 6vh 0;
+    padding: 32% 0 32% 0;
 } 
 
-.nav-header-link a:hover {
+.header-nav-link a:hover {
     color: #0065FC;
     box-shadow: inset 0px 2px #0065FC;
 } 
 
-#place-search-section h1 {
-    margin-bottom: -10px;
+#place-search-section-main-title {
+    margin-top: 10px;
+    margin-bottom: -5px;
 }
 
-#place-search-container {
+.place-search-section-follow-title {
+    margin-bottom: 20px;
+}
+
+#place-search-field-container {
     width: 31.5%;
     display: flex;
 }
@@ -132,7 +134,7 @@ input::placeholder {
     color: white;
 }
 
-#place-filter-with-title {
+#place-filter-container-with-title {
     display: flex;
     align-items: center;
     margin-left: 10px;
@@ -151,10 +153,10 @@ input::placeholder {
     width: 0;
 }
 
-#place-filter-container h3 {
-    margin-top: 16px;
-    font-size: 1.15em;
-    padding-left: 10px;
+#place-filter-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;    
+    font-size: 1.2em;
 }
 
 .place-filter-content {
@@ -178,7 +180,7 @@ input[type="checkbox"].place-filter + label {
     font-size: 1.1em;
     white-space: nowrap;
     height: 50px;
-    padding: 0 20px 0 0;
+    padding-right: 20px;
     display: flex;
     align-items: center;
     background-color: white;
@@ -224,8 +226,8 @@ input[type="checkbox"]:checked + label {
 
 .upper-cards-background {
     background-color: #F2F2F2;
-    padding: 20px 40px 0px 40px;
-    margin: 25px 0 25px 0;
+    padding: 30px 40px 0px 40px;
+    margin: 25px 0 42px 0;
     border-radius: 20px;
 }
 
@@ -251,7 +253,7 @@ input[type="checkbox"]:checked + label {
     flex-direction: column;
 }
 
-.card-housing, .card-trend {
+.card-housing, .card-trend, .card-activities {
     background-color: white;
     border: 5px solid white;
     border-radius: 20px;
@@ -262,8 +264,6 @@ input[type="checkbox"]:checked + label {
 .card-housing:hover, .card-trend:hover, .card-activities:hover {
     box-shadow: 0px 0px 10px gray;  
 }
-
-
 
 .card-housing-img img {
     width: 100%;
@@ -279,22 +279,28 @@ input[type="checkbox"]:checked + label {
     padding: 0 10px 0 10px;
 }
 
-.card-housing h3, .card-trend h3 {
+.card-housing-title, .card-trend-title {
     font-size: 0.95em;
     margin: 4px 0 4px 0;
 }
 
-.card-housing p, .card-trend p {
+.card-housing-price, .card-trend-price {
     font-size: 0.8em;
+}
+
+.card-housing-price {
     margin: 4px 0 4px 0;
 }
 
-.card-trend p {
+.card-trend-price {
     margin: 6px 0 2px 0;
 }
 
+#housing-more-link:hover {
+    text-decoration: underline;
+}
+
 .card-stars {
-    
     margin: 5px 0 6px 0;
     display: flex;
 }
@@ -306,6 +312,7 @@ input[type="checkbox"]:checked + label {
 
 .card-trend-stars {
     margin: 0;
+
 }
 
 .fa-star {
@@ -326,7 +333,7 @@ input[type="checkbox"]:checked + label {
 .fa-chart-line {
     color: #0065FC;
     font-size: 1.2em;
-    padding-top: 25px;
+    padding-top: 21px;
 }
 
 .card-trend-container {
@@ -336,7 +343,7 @@ input[type="checkbox"]:checked + label {
     gap: 30px;
 }
 
-.card-trend {
+.card-trend-sub-container {
     display: flex;
     height: 135px;
 }
@@ -363,15 +370,12 @@ input[type="checkbox"]:checked + label {
 .card-activities-container {
     display: flex;
     gap: 40px;
+    margin: 30px 0 60px 0;
 }
 
 .card-activities {
+    border: 0px;
     flex: 1;
-    background-color: white;
-    border-radius: 20px;
-    margin: 0 0 60px 0;
-    box-shadow: 0 0 10px #D9D9D9;
-    transition: box-shadow 0.2s;
 }
 
 .card-activities-img img {
@@ -391,7 +395,7 @@ input[type="checkbox"]:checked + label {
     padding: 0 17px 3px 17px;
 }
 
-.card-activities h3 {
+.card-activities-title {
     font-size: 1.05em;
 }
 
@@ -408,11 +412,15 @@ footer {
 }
 
 .nav-footer-content {
-    flex:1;
+    flex: 1;
 }
 
 .nav-footer-link {
     margin: 0 0 10px 0;
+}
+
+.nav-footer-link:hover {
+    text-decoration: underline;
 }
 
 /*fin de la version desktop, début de la version tablette*/
@@ -420,36 +428,33 @@ footer {
 @media screen and (max-width: 992px) {
     #global-container{
         flex: 0 1 872px;
-        padding: 0 60px 0 60px;
+        padding: 0 55px 0 55px;
     }
 
-    #place-filter-with-title {
-        gap: 0.5vw;
-    }
-
-    #place-filter-container h3 {
-        padding-left: 0px;
+    #place-filter-container-with-title {
+        gap: 0.7vw;
     }
 
     #place-filter-container {
         flex-wrap: wrap;
-        gap: 0.7vw;
+        gap: 0.9vw;
     }
 
-    #place-filter-with-title {
+    #place-filter-container-with-title {
         margin-left: 0;
     }
-
-    input[type="checkbox"].place-filter + label {
-        /*margin: 0 2px;*/
-      }
 
     #upper-cards-container {
         flex-direction: column;
     }
 
     #upper-cards-item-1 {
-        padding: 20px 40px 30px 40px;
+        padding: 30px 40px 30px 40px;
+    }
+
+    #upper-cards-item-2 {
+        padding-top: 20px;
+        margin-bottom: 50px;
     }
 
     .card-trend-container {
@@ -457,32 +462,31 @@ footer {
         gap: 25px;
     }
 
-    .card-trend-sub-container {
+    .card-trend {
         flex: 1;
     }
 
     .card-trend-text-container {
-        padding: 5px 15px 5px 15px;
+        padding: 5px 5px 5px 15px;
     }
 
     .fa-chart-line {
         padding-top: 20px;
     }
 
+    .card-activities-container {
+        margin-top: 45px;
+        margin-bottom: 70px;
+    }
+
     .card-activities-img img {
         height: 210px;
     }
 
-    .card-activities-title {
+    .card-activities-title {  
         padding-top: 2px;
-    }
-
-    .card-activities h3 {  
         margin-top: 5px;
         margin-bottom: 10px;
-    }
-
-    .card-activities-title {
         flex: 1;
     }
 
@@ -500,8 +504,9 @@ footer {
         padding: 0;
     }
 
-    #place-search-section-main-title, #place-search-section-follow-title,
-    #place-search-container, #place-filter-title, #remaining-place-container {
+    #place-search-section-main-title, .place-search-section-follow-title,
+    #place-search-field-container, #place-filter-title, #remaining-place-container,
+    #upper-cards-item-1, #upper-cards-item-2, #card-activities-section{
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -524,22 +529,22 @@ footer {
         margin-top: 30px;
     }
 
-    #place-search-section-follow-title {
-        margin-top: 25px;
+    .place-search-section-follow-title {
+        margin-top: 20px;
     }
 
-    #place-search-container {
-        margin: 40px 0;
+    #place-search-field-container {
+        margin: 40px 0 35px 0;
         width: 90vw;
         justify-content: center;
     }
 
-    .nav-header-link a {
+    .header-nav-link a {
         padding: 3vh 0 3vh 0;
         box-shadow: inset 0px -3px #D9D9D9;
     }
 
-    .nav-header-link a:hover {
+    .header-nav-link a:hover {
         box-shadow: inset 0px -3px #0065FC;
     } 
 
@@ -547,29 +552,23 @@ footer {
         width: 64vw;
     }
 
-    #place-search-item-3 {
+    #place-search-item-3-desktop {
         display: none;
     }
 
     .fa-sharp.fa-magnifying-glass {
-        background-color: #0065FC;
         color: white;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 700;
-        font-size: 20px;
-        padding: 15px 17px 15px 17px;
-        border: none;
-        border-radius: 0 15px 15px 0;
         display: inline;
     }
 
-    #place-filter-with-title {
+    #place-filter-container-with-title {
         flex-direction: column;
         align-items: flex-start;
     }
 
     #place-filter-title {
         margin-top: 0;
+        margin-bottom: 12px;
     }
 
     #place-filter-container {
@@ -585,12 +584,16 @@ footer {
         padding-right: 6px;
     }
 
-    #place-filter-container span {
+    .place-filter-content-label {
         font-size: 0.65em;
     }
 
+    .place-filter-content-i {
+        font-size: 1.2em;
+    }
+
     .place-filter-content {
-        width: 36vw;
+        width: 38vw;
     }
 
     #remaining-place-container {
@@ -599,8 +602,6 @@ footer {
     }
 
     .upper-cards-background {
-        padding-left: 20px;
-        padding-right: 20px;
         padding-top: 10px;
         margin-bottom: 10px;
     }
@@ -611,13 +612,26 @@ footer {
 
     #upper-cards-item-2 {
         border-radius: 0;
-        padding-bottom: 5px;
+        margin-bottom: 0px;
     }
 
     #trend-title h2 {
-        margin-bottom: 10px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .card-trend-title, .card-housing-title {
+        font-size: 1.05em;
+    }
+
+    .card-trend-price, .card-housing-price {
+        font-size: 0.9em;
     }
     
+    .fa-chart-line {
+        padding-top: 23px;
+    }
+
     #upper-cards-item-1 {
         background-color: transparent;
         padding-top:0;
@@ -627,29 +641,35 @@ footer {
     }
 
     .card-trend-container {
+        margin-bottom: 50px;
         flex-direction: column;
         gap: 12px;
     }
+
+    .card-trend-text-container {
+        padding: 5px 5px 8px 20px;
+      }
 
     #card-housing-container {
         grid-template-columns: repeat(1, 1fr);
         gap: 12px;
     }
 
-    #housing-title {
-        margin-bottom: 0px;
+    #housing {
+        margin-top: 30px;
     }
 
-    #more-housing-link {
+    #housing-more-link {
         display: none;
     }
 
-    #card-activities-section {
-        padding-left: 20px;
-        padding-right: 20px;
+    #activities {
+        width: 120px;
+        margin-bottom: 5px;
     }
 
     .card-activities-container {
+        margin-top: 0px;
         margin-bottom: 80px;
         flex-direction: column;
         gap: 25px;
