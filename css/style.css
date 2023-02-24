@@ -115,7 +115,7 @@ nav {
 input::placeholder {
     color: black;
     opacity: 100;
-    /* sert à contourner l'opacité réduite dans firefox*/
+    /*sert à contourner l'opacité réduite dans firefox*/
   }
 
 #place-search-item-3 {
@@ -123,10 +123,11 @@ input::placeholder {
     color: white;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 1.1em;
+    font-size: 1.2em;
     padding: 0 20px 0 20px;
     border: none;
     border-radius: 0 15px 15px 0;
+    cursor: pointer;
 }
 
 .fa-sharp.fa-magnifying-glass {
@@ -156,7 +157,7 @@ input::placeholder {
 #place-filter-title {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;    
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .place-filter-content {
@@ -187,6 +188,7 @@ input[type="checkbox"].place-filter + label {
     border: 2px solid #D9D9D9;
     border-radius: 50px;
     transition: background-color 0.3s;
+    cursor: pointer;
   }
 
 input[type="checkbox"].place-filter + label:hover {
@@ -392,7 +394,7 @@ input[type="checkbox"]:checked + label {
 }
 
 .card-activities-title {
-    padding: 0 17px 3px 17px;
+    padding: 0 15px 3px 15px;
 }
 
 .card-activities-title {
@@ -475,8 +477,7 @@ footer {
     }
 
     .card-activities-container {
-        margin-top: 45px;
-        margin-bottom: 70px;
+        margin: 45px 0 70px 0;
     }
 
     .card-activities-img img {
@@ -513,7 +514,6 @@ footer {
 
     header {
         flex-direction: column;
-
     }
 
     #header-logo-container {
