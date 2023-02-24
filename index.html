@@ -4,8 +4,8 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
         <script src="https://kit.fontawesome.com/7da07f81aa.js" crossorigin="anonymous"></script>
         <title>Hébergements de vacance et activités - Booki</title>
@@ -32,7 +32,7 @@
                     <form>
                         <div id="place-search-field-container">
                             <i class="fa-solid fa-location-dot" id="place-search-item-1" aria-hidden="true"></i>
-                            <input type="search" placeholder="Marseille, France" id="place-search-item-2" aria-label="Ville recherchée"/>
+                            <input type="search" placeholder="Marseille, France" id="place-search-item-2" aria-label="Rechercher ville"/>
                             <button type="submit" id="place-search-item-3">
                                 <span id="place-search-item-3-desktop">rechercher</span>
                                 <span id="place-search-item-3-mobile"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></span>
@@ -53,8 +53,8 @@
                         </div>
                     </form>
                     <div id="remaining-place-container">
-                        <div id="remaining-place-info" aria-label="information"><i class="fa-sharp fa-solid fa-info"></i></div>
-                        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                        <div id="remaining-place-info" aria-hidden="true"><i class="fa-sharp fa-solid fa-info"></i></div>
+                        <p aria-label="information">Plus de 500 logements sont disponibles dans cette ville</p>
                     </div>
                 </section>
                 <section id="upper-cards-container">
@@ -64,9 +64,9 @@
                             <div class="card-housing">
                                 <a href="#" title="Auberge de la canebière">
                                     <div class="card-housing-sub-container">
-                                        <picture class="card-housing-img">
+                                        <picture class="card-housing-img" aria-label="Vue d'une chambre deux lit superposés avec fenêtre donnant une vue sur la canebière">
                                             <source media="(max-width: 768px)" srcset="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
-                                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="vue d'une chambre de l'Auberge de la Canebière: deux lit superposés avec fenêtre donnant une vue sur la Canebière."/>
+                                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="vue d'une chambre de l'Auberge de la Canebière"/>
                                         </picture>
                                         <div class="card-housing-text-container">
                                             <div>
@@ -87,9 +87,9 @@
                             <div class="card-housing">
                                 <a href="#" title="Hôtel du port">
                                     <div class="card-housing-sub-container">
-                                        <picture class="card-housing-img">
+                                        <picture class="card-housing-img" aria-label="Chambre avec deux lits simple">
                                             <source media="(max-width: 768px)" srcset="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
-                                            <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="vue d'une chambre de l'Hôtel du port: chambre avec deux lits simple"/>
+                                            <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="vue d'une chambre de l'Hôtel du port"/>
                                         </picture>
                                         <div class="card-housing-text-container">
                                             <div>
@@ -110,9 +110,9 @@
                             <div class="card-housing">
                                 <a href="#" title="hôtel les mouettes">
                                     <div class="card-housing-sub-container">    
-                                        <picture class="card-housing-img">
+                                        <picture class="card-housing-img" aria-label="Chambre lit double avec armoire">
                                             <source media="(max-width: 768px)" srcset="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg">
-                                            <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="vue d'une chambre de l'hôtel Les mouettes: Chambre lit double avec armoire"/>
+                                            <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="vue d'une chambre de l'hôtel Les mouettes"/>
                                         </picture>
                                         <div class="card-housing-text-container">
                                             <div>
@@ -133,9 +133,9 @@
                             <div class="card-housing">
                                 <a href="#" title="Hôtel de la mer">
                                     <div class="card-housing-sub-container">
-                                        <picture class="card-housing-img">
+                                        <picture class="card-housing-img" aria-label="Chambre spacieuse avec lit double et canapé">
                                             <source media="(max-width: 768px)" srcset="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
-                                            <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Vue d'une chambre de l'Hôtel de la mer: Chambre spacieuse avec lit double et canapé"/>
+                                            <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Vue d'une chambre de l'Hôtel de la mer"/>
                                         </picture>
                                         <div class="card-housing-text-container">
                                             <div>
@@ -156,9 +156,9 @@
                             <div class="card-housing">
                                 <a href="#" title="Auberge le panier">
                                     <div class="card-housing-sub-container">
-                                        <picture  class="card-housing-img">
+                                        <picture  class="card-housing-img" aria-label="Chambre étroite composée d'une multitude de lits superposés">
                                             <source media="(max-width: 768px)" srcset="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
-                                            <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Vue d'une chambre de l'Auberge Le Panier: Chambre étroite avec une multitude de lits superposés"/>
+                                            <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Vue d'une chambre de l'Auberge Le Panier"/>
                                         </picture>
                                         <div class="card-housing-text-container">
                                             <div>
@@ -179,9 +179,9 @@
                             <div class="card-housing">
                                 <a href="#" title="Hôtel chez Amina">
                                     <div class="card-housing-sub-container">
-                                        <picture class="card-housing-img">
+                                        <picture class="card-housing-img" aria-label="Chambre avec deux lits simples et un bureau">
                                             <source media="(max-width: 768px)" srcset="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
-                                            <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Vue d'une chambre de l'Hôtel Chez Amina: chambre avec deux lits simple et un bureau"/>
+                                            <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Vue d'une chambre de l'Hôtel Chez Amina"/>
                                         </picture>
                                         <div class="card-housing-text-container">
                                             <div>
@@ -211,10 +211,10 @@
                             <div class="card-trend">
                                 <a href="#" title="Hôtel Le soleil du matin">
                                     <div class="card-trend-sub-container">
-                                        <picture class="card-trend-img">
+                                        <picture class="card-trend-img" aria-label="Chambre avec lit double et miroir">
                                             <source media="(max-width: 768px)" srcset="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
                                             <source media="(max-width: 992px)" srcset="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
-                                            <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Vue d'une chambre de l'Hôtel Le soleil du matin: Chambre avec lit double et miroir, décoration soignée"/>
+                                            <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Vue d'une chambre de l'Hôtel Le soleil du matin"/>
                                         </picture>
                                         <div class="card-trend-text-container">
                                             <div class="card-text-content">
@@ -235,10 +235,10 @@
                             <div class="card-trend">
                                 <a href="#" title="Chambres d'hôtes Au cœur de l'eau">
                                     <div class="card-trend-sub-container">
-                                        <picture class="card-trend-img">
+                                        <picture class="card-trend-img" aria-label="Chambre vaste avec lit double">
                                             <source media="(max-width: 768px)" srcset="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg">
                                             <source media="(max-width: 992px)" srcset="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg">
-                                            <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Vue d'une chambre des Chambres d'hôtes Au cœur de l'eau: Chambre vaste avec lit double"/>
+                                            <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Vue d'une chambre des Chambres d'hôtes Au cœur de l'eau"/>
                                         </picture>
                                         <div class="card-trend-text-container">
                                             <div class="card-text-content">
@@ -259,10 +259,10 @@
                             <div class="card-trend">
                                 <a href="#" title="Hôtel Bleu et Blanc">
                                     <div class="card-trend-sub-container">
-                                        <picture class="card-trend-img">
+                                        <picture class="card-trend-img" aria-label="Chambre double">
                                             <source media="(max-width: 768px)" srcset="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
                                             <source media="(max-width: 992px)" srcset="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
-                                            <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Vue d'une chambre de l'Hôtel Bleu et Blanc: chambre double"/>
+                                            <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Vue d'une chambre de l'Hôtel Bleu et Blanc"/>
                                         </picture>
                                         <div class="card-trend-text-container">
                                             <div class="card-text-content">
@@ -349,23 +349,23 @@
                         <div class="nav-footer-content">
                             <h3>À propos</h3>
                             <ul class="nav-footer-item">
-                                <li class="nav-footer-link"><a href="#">Fonctionnement du site</a></li>
-                                <li class="nav-footer-link"><a href="#">Conditions générales</a></li>
-                                <li class="nav-footer-link"><a href="#">Données et confidentialité</a></li>
+                                <li class="nav-footer-link"><a href="#" title="Fonctionnement du site">Fonctionnement du site</a></li>
+                                <li class="nav-footer-link"><a href="#" title="Conditions générales">Conditions générales</a></li>
+                                <li class="nav-footer-link"><a href="#" title="Données et confidentialité">Données et confidentialité</a></li>
                             </ul>
                         </div>
                         <div class="nav-footer-content">
                             <h3>Nos hébergements</h3>
                             <ul class="nav-footer-item">
-                                <li class="nav-footer-link"><a href="#">Charte qualité</a></li>
-                                <li class="nav-footer-link"><a href="#">Proposer votre hôtel</a></li>
+                                <li class="nav-footer-link"><a href="#" title="Charte qualité">Charte qualité</a></li>
+                                <li class="nav-footer-link"><a href="#" title="Proposer votre hôtel">Proposer votre hôtel</a></li>
                             </ul>
                         </div>
                         <div class="nav-footer-content">
                             <h3>Assistance</h3>
                             <ul class="nav-footer-item">
-                                <li class="nav-footer-link"><a href="#">Centre d'aide</a></li>
-                                <li class="nav-footer-link"><a href="#">Nous contacter</a></li>
+                                <li class="nav-footer-link"><a href="#" title="Centre d'aide">Centre d'aide</a></li>
+                                <li class="nav-footer-link"><a href="#" title="Nous contacter">Nous contacter</a></li>
                             </ul>
                         </div>
                     </div>
